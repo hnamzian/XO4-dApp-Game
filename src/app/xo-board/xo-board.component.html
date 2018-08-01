@@ -1,25 +1,18 @@
-<!-- <div fxLayout="column">
-    <div class="player-bar-wrapper">
-        <player-bar [player-name]="oponentName"></player-bar>
-    </div> -->
-    <div class="board">
-        <div style="margin-top: 25px;">
-            <div class="content-wrapper" *ngFor="let sheet of sheetIndexes" [fxLayout]="sheet % 2 === 0 ? 'row' : 'row-reverse'">
-                <div class="btn-wrapper" fxLayout="column">
-                    <button class="btn" (click)="rotateSheet(sheet, 'CCW')">
-                        <i class="fa fa-undo"></i>
-                    </button>
-                    <button class="btn" (click)="rotateSheet(sheet, 'CW')">
-                        <i class="fa fa-repeat"></i>
-                    </button>
-                </div>
-                <div class="sheet-wrapper">
-                    <xo-sheet [sheet]="sheet"></xo-sheet>
-                </div>
+
+<div class="board">
+    <div style="margin-top: 25px;">
+        <div class="content-wrapper" *ngFor="let sheet of sheetIndexes" [fxLayout]="sheet % 2 === 0 ? 'row' : 'row-reverse'">
+            <div class="btn-wrapper" fxLayout="column">
+                <button class="btn" (click)="rotateSheet(sheet, 'CCW')">
+                    <i class="fa fa-undo"></i>
+                </button>
+                <button class="btn" (click)="rotateSheet(sheet, 'CW')">
+                    <i class="fa fa-repeat"></i>
+                </button>
+            </div>
+            <div class="sheet-wrapper">
+                <xo-sheet [sheet]="sheet"></xo-sheet>
             </div>
         </div>
     </div>
-    <!-- <div class="player-bar-wrapper">
-        <player-bar [player-name]="yourName"></player-bar>
-    </div>
-</div> -->
+</div>

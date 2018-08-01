@@ -8,6 +8,8 @@ import { Component, Input } from '@angular/core';
 export class PlayerBarComponent {
 
     @Input("player-name") playerName;
+    @Input("piece") piece;
+    @Input("player-turn") playerTurn;
 
     constructor() { }
 

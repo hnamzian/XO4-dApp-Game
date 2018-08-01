@@ -1,11 +1,16 @@
 <div fxLayout="row">
     <div class="board-content-wrapper" fxLayout="column">
-        <player-bar [player-name]="oponentName"></player-bar>
+        <player-bar 
+            [player-name]="oponentName" 
+            [piece]="gameService.guestPiece"
+            [player-turn]="gameService.player"></player-bar>
         <xo-board></xo-board>
-        <player-bar [player-name]="yourName"></player-bar>
+        <player-bar 
+            [player-name]="yourName" 
+            [piece]="gameService.hostPiece"
+            [player-turn]="gameService.player"></player-bar>
     </div>
     <div class="state-action-wrapper" fxLayout="column">
         <setup-panel></setup-panel>
-        <status-panel></status-panel>
     </div>
 </div>

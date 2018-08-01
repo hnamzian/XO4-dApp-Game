@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GameService } from '../services/game.service';
 
 @Component({
   selector: 'game-panel',
@@ -9,6 +10,6 @@ export class GamePanelComponent {
     yourName = "Your Name";
     oponentName="Oponent Name";
 
-    constructor() { }
+    constructor(private gameService: GameService) { }
 
 }

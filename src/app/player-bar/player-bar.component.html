@@ -5,7 +5,10 @@
     <div class="player-info">
         <a> {{ playerName }} (rate)</a>
     </div>
-    <div class="clock">
+    <div class="clock" fxLayout="row">
+        <div class="player-turn-box"
+            *ngIf="playerTurn === piece"
+            [style.backgroundColor]="piece === 'X' ? 'blue' : 'green'"></div>
         <p>5:00</p>
     </div>
 </div>

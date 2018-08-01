@@ -9,7 +9,6 @@ import { XOBoardComponent } from './xo-board/xo-board.component';
 import { PlayerBarComponent } from './player-bar/player-bar.component';
 import { GamePanelComponent } from './game-panel/game-panel.component';
 import { SetupPanelComponent } from './setup-panel/setup-panel.component';
-import { StatusPanelComponent } from './status-panel/status-panel.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +18,6 @@ import { StatusPanelComponent } from './status-panel/status-panel.component';
     PlayerBarComponent,
     GamePanelComponent,
     SetupPanelComponent,
-    StatusPanelComponent
   ],
   imports: [
     BrowserModule,

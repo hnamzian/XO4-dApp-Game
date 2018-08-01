@@ -26,12 +26,24 @@
         width: 150px;
         margin-left: auto;
         margin-right: 20px;
+        border-radius: 10px;
         display: table;
         background-color: #DDD;
         font-size: 30px;
         
+        .player-turn-box {
+            width: 20px;
+            height: 20px;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 10px;
+            border-radius: 50%;
+            background-color: blue;
+        }
+
         p {
             margin: 0px;
+            margin-left: auto;
             margin-right: 10px;
             float: right;
         }

@@ -5,6 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class GameService {
 
+    public _hostPiece = 'X';
+    public _guestPiece = 'O';
     private _player = 'X';
     private _canRotate = true;
     private _winner = null;
@@ -118,4 +120,14 @@ export class GameService {
     get squares() {
         return this._squares;
     }
+
+    get hostPiece() {
+        return this._hostPiece;
+    }
+
+    get guestPiece() {
+        return this._guestPiece;
+    }
+
+
 }

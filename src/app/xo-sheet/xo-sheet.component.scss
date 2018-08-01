@@ -1,0 +1,19 @@
+.xo-sheet {
+    width: 210px;
+    height: 210px;
+    margin: 0px;
+    border: 1px solid rgb(6, 167, 179);
+    border-radius: 15px;
+    background-color: rgb(5, 188, 201);
+
+    button {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: white;
+    }
+}

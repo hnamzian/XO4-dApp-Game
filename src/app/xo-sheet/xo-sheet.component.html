@@ -1,0 +1,10 @@
+<div class="xo-sheet">
+    <div>
+        <button 
+            *ngFor="let cell of cellIndexes"
+            [style.backgroundColor]="gameService.squares[cell + 9*sheet]=='X' ? 'blue' : 
+                                        gameService.squares[cell + 9*sheet]=='O' ? 'green' : 'white'"
+            (click)="moveHandler(cell, sheet)"></button>
+    </div>
+</div>
+

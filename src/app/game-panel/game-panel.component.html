@@ -1,0 +1,11 @@
+<div fxLayout="row">
+    <div class="board-content-wrapper" fxLayout="column">
+        <player-bar [player-name]="oponentName"></player-bar>
+        <xo-board></xo-board>
+        <player-bar [player-name]="yourName"></player-bar>
+    </div>
+    <div class="state-action-wrapper" fxLayout="column">
+        <setup-panel></setup-panel>
+        <status-panel></status-panel>
+    </div>
+</div>

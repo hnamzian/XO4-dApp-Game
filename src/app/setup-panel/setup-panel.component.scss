@@ -1,0 +1,28 @@
+
+.setup-wrapper {
+    margin: 10px;
+    border: 1px solid #DDD;
+
+    input {
+        height: 30px;
+        padding-left: 10px;
+        margin: 10px;
+        margin-bottom: 0px;
+    }
+
+    .btn-request {
+        height: 40px;
+        margin: 10px;
+        background-color: rgb(255, 22, 22);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer;
+    }
+    
+
+    .btn-request:hover {
+        background-color: rgb(255, 70, 70);
+    }
+}

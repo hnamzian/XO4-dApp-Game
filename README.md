@@ -1,4 +1,6 @@
-# Xo4
+# XO4
+
+XO-4 is a game originated from Tic Tac Toe (XO) game, but much more exciting and tricky. There exists 4 simple XO sheets (this is where '4' stands for) with rotation capaility. Besides, the winner has to align 5 pieced in row instead of 3. More diagonal alignment possibility will make it more really intellectual game. On the other hand, users will not have infinite time to move. The game has time limitation like chess which defines different time strategies like Blitz, Bullet, etc.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 

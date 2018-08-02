@@ -9,6 +9,6 @@
         <div class="player-turn-box"
             *ngIf="playerTurn === piece"
             [style.backgroundColor]="piece === 'X' ? 'blue' : 'green'"></div>
-        <p>5:00</p>
+        <p>{{ remainingTime }}</p>
     </div>
 </div>

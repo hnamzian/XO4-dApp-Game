@@ -9,7 +9,9 @@ import { GameService } from '../services/game.service';
 export class GamePanelComponent {
     yourName = "Your Name";
     oponentName="Oponent Name";
-
+    hostTime;
+    guestTime;
+    
     constructor(private gameService: GameService) { }
 
 }

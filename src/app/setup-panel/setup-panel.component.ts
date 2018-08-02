@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { GameService } from '../services/game.service';
 
 @Component({
   selector: 'setup-panel',
   templateUrl: './setup-panel.component.html',
   styleUrls: ['./setup-panel.component.scss']
 })
-export class SetupPanelComponent implements OnInit {
+export class SetupPanelComponent {
 
-  constructor() { }
+  constructor(private gameService: GameService) { }
 
-  ngOnInit() {
+  newGame() {
+    this.gameService.resetGame();
   }
 
 }

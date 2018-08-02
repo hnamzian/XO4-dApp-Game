@@ -10,6 +10,7 @@ export class PlayerBarComponent {
     @Input("player-name") playerName;
     @Input("piece") piece;
     @Input("player-turn") playerTurn;
+    @Input("remaining-time") remainingTime;
 
     constructor() { }
 

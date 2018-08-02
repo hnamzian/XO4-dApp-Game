@@ -1,0 +1,10 @@
+<div class="status-wrapper" fxLayout="row" [ngSwitch]="gameService.winner">
+    <ng-container *ngSwitchCase="gameService.hostPiece">
+        <img src="https://image.flaticon.com/icons/svg/445/445087.svg" alt="">
+        <h3 class="status-text">YOU WON</h3>
+    </ng-container>
+    <ng-container *ngSwitchCase="gameService.guestPiece">
+        <img src="https://image.flaticon.com/icons/svg/991/991228.svg" alt="">
+        <h3 class="status-text">YOU LOST</h3>
+    </ng-container>
+</div>
